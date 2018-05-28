@@ -1,0 +1,33 @@
+{
+  "name": "vain0x.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Website",
+  "main": "index.js",
+  "scripts": {
+    "clean": "git clean -f ./dist/**",
+    "build": "npm run build-sass & npm run build-pug",
+    "build-pug": "npx pug ./src/pug --out ./dist --basedir ./src/pug --pretty",
+    "build-sass": "npx node-sass ./src/scss --output ./dist/css --output-style expanded",
+    "watch": "concurrently \"npm run watch-pug\" \"npm run watch-sass\"",
+    "watch-pug": "npx pug ./src/pug --out ./dist --basedir ./src/pug --pretty --watch",
+    "watch-sass": "npx node-sass ./src/scss --output ./dist/css --output-style expanded --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vain0x/website.git"
+  },
+  "author": "vain0x",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/vain0x/website/issues"
+  },
+  "homepage": "https://vain0x.github.io/",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.9.0",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
