@@ -1,0 +1,99 @@
+:root {
+  --primary-color-light: #6746c3;
+  --primary-color-dark: #000063;
+  --primary-color: #311b92;
+  --primary-color-text: #fafafa;
+  --accent-color: #ffa000;
+  --accent-color-text: #212121;
+  --accent-color-light: #ffd149;
+  --accent-color-dark: #c67100;
+  --base-color: #fafafa;
+  --base-color-text: #212121;
+  --divider-color: #bdbdbd;
+
+  --app-width: 600px;
+}
+
+html {
+  /* 1rem = 10px. */
+  font-size: 62.5%;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: 1.5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--base-color-text);
+  background: var(--base-color);
+}
+
+#app,
+#app main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#app {
+  background-color: var(--base-color);
+}
+
+#app header {
+  background-color: var(--primary-color-dark);
+}
+
+#app .app-header-contents {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+
+  margin: 0 16px;
+}
+
+#app .app-header-contents h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+#app .app-header-contents a,
+#app .app-header-contents a:active,
+#app .app-header-contents a:focus,
+#app .app-header-contents a:hover,
+#app .app-header-contents a:visited {
+  margin: 4px 16px;
+  text-decoration: none;
+  color: var(--primary-color-text);
+}
+
+#app main {
+  flex: 1 1 auto;
+  margin: 8px 16px;
+  padding: 8px 16px;
+}
+
+@media (min-width: 649px) {
+  #app .app-header-contents {
+    margin: 0 auto;
+    width: var(--app-width);
+  }
+
+  #app main {
+    margin: 8px auto;
+    width: var(--app-width);
+  }
+}
