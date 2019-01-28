@@ -18,7 +18,7 @@ export default (contents: JSX.Element) => (
       <link rel="icon" type="image/png" href="/favicon.jpg" />
     </head>
     <body id="app">
-      <header class="app-header-container">
+      <header class="app-header-container g-nav">
         <div class="app-header-contents">
           <a href="/">
             <h1>
