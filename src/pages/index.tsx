@@ -57,6 +57,19 @@ const projects = [
   },
 ]
 
+const articles = [
+  {
+    title: "競プロ参戦記",
+    url: "https://note.mu/vain0x/m/m9aa8513f4e97",
+    description: "競技プログラミングの問題を解いたあと、その考察を自分なりに書いていくブログです。",
+  },
+  {
+    title: "LSP学習記",
+    url: "[https://qiita.com/vain0x/items/d050fe7c8b342ed2004e",
+    description: "プログラミング言語の入力支援などを行う機能を開発していく記事です。",
+  },
+]
+
 export default layout(
   <article class="page-index">
     <div>
@@ -83,6 +96,26 @@ export default layout(
 
           <div class="project-description">
             {project.description}
+          </div>
+        </section>
+      ))}
+    </section>
+
+    <h2 class="g-article-section">
+      技術記事
+    </h2>
+
+    <section class="projects">
+      {articles.map(article => (
+        <section class="project">
+          <h3 class="project-heading g-nav">
+            <a href={article.url}>
+              {article.title}
+            </a>
+          </h3>
+
+          <div class="project-description">
+            {article.description}
           </div>
         </section>
       ))}
