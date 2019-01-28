@@ -1,5 +1,12 @@
 import { h } from "hyperapp"
 
+const favicon = (
+  <img
+    class="app-header-logo"
+    src="https://vain0x.github.com/blog/favicon.jpg"
+    width={24} height={24} alt="vain0x-avatar" />
+)
+
 export default (contents: JSX.Element) => (
   <html lang="ja">
     <head>
@@ -8,13 +15,14 @@ export default (contents: JSX.Element) => (
       <title>vain0x's Page</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" type="text/css" media="screen" href="/index.css" />
+      <link rel="icon" type="image/png" href="/favicon.jpg" />
     </head>
     <body id="app">
-      <header>
+      <header class="app-header-container">
         <div class="app-header-contents">
           <a href="/">
             <h1>
-              vain0x's Page
+              {favicon}'s Page
             </h1>
           </a>
           <a href="https://vain0x.github.io/blog/">
@@ -26,13 +34,10 @@ export default (contents: JSX.Element) => (
           <a href="https://github.com/vain0x">
             GitHub
           </a>
-          <a href="/about">
-            About
-          </a>
         </div>
       </header>
 
-      <main>
+      <main class="app-main-container">
         {contents}
       </main>
     </body>
