@@ -145,7 +145,7 @@ export default layout(
     <section class="projects">
       {renderProject({
         icon: atcoderIcon,
-        title: "AtCoder @vain0x",
+        title: "AtCoder @vain0",
         url: "https://atcoder.jp/users/vain0",
         description: (
           <div>
