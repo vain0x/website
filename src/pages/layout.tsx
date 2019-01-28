@@ -3,7 +3,7 @@ import { h } from "hyperapp"
 const favicon = (
   <img
     class="app-header-logo"
-    src="https://vain0x.github.com/blog/favicon.jpg"
+    src="/favicon.jpg"
     width={24} height={24} alt="vain0x-avatar" />
 )
 
@@ -14,6 +14,7 @@ export default (contents: JSX.Element) => (
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title>vain0x's Page</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700&amp;subset=japanese" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" media="screen" href="/index.css" />
       <link rel="icon" type="image/png" href="/favicon.jpg" />
     </head>
