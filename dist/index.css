@@ -10,6 +10,7 @@
   --base-color: #fafafa;
   --base-color-text: #212121;
   --divider-color: #bdbdbd;
+  --qiita-color: #54c400;
 
   --app-width: 600px;
 }
@@ -161,6 +162,15 @@ body {
   color: var(--primary-color-light);
 }
 
+/* Footer. */
+
+#app footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  color: var(--base-color-text);
+}
+
 /* Index page. */
 
 .page-index,
@@ -175,9 +185,12 @@ body {
   font-size: 1.6rem;
 }
 
-.page-index .projects {
+.page-index .projects,
+.page-index .contacts {
   display: flex;
   flex-flow: column nowrap;
+
+  padding: 0 16px;
 }
 
 @media (min-width: 649px) {
@@ -191,15 +204,16 @@ body {
   margin-top: 16px;
 }
 
-.page-index .project-heading {
+.page-index .project-heading,
+.page-index .project-heading-icon {
   font-size: 2.0rem;
 
-  display: flex;
+  display: inline-flex;
   flex-flow: row nowrap;
   align-items: flex-end;
 }
 
-.page-index .project-heading .github-icon {
+.page-index .project-heading-icon {
   margin-right: 8px;
 }
 
@@ -209,5 +223,41 @@ body {
 }
 
 .page-index .project-description {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.page-index .contacts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 8px 16px;
+}
+
+/* Others */
+
+.g-qiita-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: var(--qiita-color);
+  border-radius: 2.4rem;
+  font-size: 1.8rem;
+  color: var(--base-color);
+}
+
+.g-atcoder-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: var(--base-color-text);
+  border-radius: 2.4rem;
+  font-size: 1.8rem;
+  color: var(--base-color);
+}
+
+.g-atcoder-rate-blue {
+  color: blue;
 }
