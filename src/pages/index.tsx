@@ -20,7 +20,7 @@ const githubIconWithSize = (size: number) => (
 
 const githubIcon = githubIconWithSize(24)
 
-const githubIconTiny = githubIconWithSize(8)
+const githubIconTiny = githubIconWithSize(16)
 
 const qiitaIcon = (
   <div class="g-qiita-icon">Q</div>
