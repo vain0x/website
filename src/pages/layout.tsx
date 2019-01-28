@@ -3,7 +3,7 @@ import { h } from "hyperapp"
 const favicon = (
   <img
     class="app-header-logo"
-    src="https://vain0x.github.com/blog/favicon.jpg"
+    src="/favicon.jpg"
     width={24} height={24} alt="vain0x-avatar" />
 )
 
