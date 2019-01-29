@@ -9,8 +9,6 @@ interface Project {
   description: string | JSX.Element,
 }
 
-const MAIL_ADDRESS = "vainzerox@gmail.com"
-
 const githubIconWithSize = (size: number) => (
   <img
     class="g-github-icon"
@@ -148,7 +146,7 @@ export default layout(
             最高レート:
             <span class="g-atcoder-rate-blue">1775</span>
             (<datetime>2019/1/28</datetime> 現在)
-        </div>
+          </div>
         ),
       })}
     </section>
@@ -159,7 +157,7 @@ export default layout(
 
     <section class="contacts">
       <div>メール</div>
-      <div><code>{MAIL_ADDRESS}</code></div>
+      <div><code>vainzerox@gmail.com</code></div>
 
       <div>Twitter</div>
       <div><a href="https://twitter.com/vain0x">@vain0x</a></div>
