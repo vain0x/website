@@ -83,13 +83,13 @@ const articles: Project[] = [
     icon: noteIcon,
     title: "競プロ参戦記",
     url: "https://note.mu/vain0x/m/m9aa8513f4e97",
-    description: "競技プログラミングの問題を解いたあと、その考察を自分なりに書いていくブログです。",
+    description: "競技プログラミングの問題を解いたあと、その考察を自分なりに書いていく連載です。",
   },
   {
     icon: qiitaIcon,
     title: "LSP学習記",
     url: "https://qiita.com/vain0x/items/d050fe7c8b342ed2004e",
-    description: "プログラミング言語の入力支援などを行う機能を開発していく記事です。",
+    description: "プログラミング言語の入力支援などを行う機能を開発していく連載です。",
   },
   {
     icon: selfIcon,
