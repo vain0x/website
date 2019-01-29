@@ -18,6 +18,13 @@ const githubIconWithSize = (size: number) => (
 
 const githubIcon = githubIconWithSize(24)
 
+const selfIcon = (
+  <img
+    class="g-self-icon"
+    src="/favicon.jpg"
+    width={24} height={24} alt="vain0x avatar" />
+)
+
 const noteIcon = (
   <div class="g-note-icon">n</div>
 )
@@ -83,6 +90,12 @@ const articles: Project[] = [
     title: "LSP学習記",
     url: "https://qiita.com/vain0x/items/d050fe7c8b342ed2004e",
     description: "プログラミング言語の入力支援などを行う機能を開発していく記事です。",
+  },
+  {
+    icon: selfIcon,
+    title: "vain0x's blog",
+    url: "/blog",
+    description: "技術ブログです。1ヶ月ごとに活動の概要をまとめた近況記事などを書いています。",
   },
 ]
 

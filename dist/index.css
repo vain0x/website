@@ -143,8 +143,6 @@ body {
 #app .app-header-contents .app-header-logo {
   width: auto;
   height: 2.4rem;
-  object-fit: cover;
-  border-radius: 100%;
 }
 
 #app .app-header-contents h1 {
@@ -234,6 +232,7 @@ body {
 
 /* Others */
 
+.g-self-icon,
 .g-note-icon,
 .g-qiita-icon,
 .g-atcoder-icon {
@@ -244,6 +243,11 @@ body {
   height: 3.2rem;
   border-radius: 2.4rem;
   font-size: 1.8rem;
+}
+
+.g-self-icon {
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .g-note-icon {

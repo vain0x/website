@@ -2,9 +2,9 @@ import { h } from "hyperapp"
 
 const favicon = (
   <img
-    class="app-header-logo"
+    class="app-header-logo g-self-icon"
     src="/favicon.jpg"
-    width={24} height={24} alt="vain0x-avatar" />
+    width={24} height={24} alt="vain0x avatar" />
 )
 
 export default (contents: JSX.Element) => (
