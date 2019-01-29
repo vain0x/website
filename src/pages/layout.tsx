@@ -28,9 +28,6 @@ export default (contents: JSX.Element) => (
           <a href="https://vain0x.github.io/blog/">
             ブログ
           </a>
-          <a href="https://note.mu/vain0x/m/m9aa8513f4e97">
-            競プロ参戦記
-          </a>
           <a href="https://github.com/vain0x">
             GitHub
           </a>
