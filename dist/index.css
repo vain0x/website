@@ -205,8 +205,7 @@ body {
   margin-top: 16px;
 }
 
-.page-index .project-heading,
-.page-index .project-heading-icon {
+.page-index .project-heading > a {
   font-size: 2.0rem;
 
   display: inline-flex;
