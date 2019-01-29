@@ -2,9 +2,9 @@ import { h } from "hyperapp"
 
 const favicon = (
   <img
-    class="app-header-logo"
+    class="app-header-logo g-self-icon"
     src="/favicon.jpg"
-    width={24} height={24} alt="vain0x-avatar" />
+    width={24} height={24} alt="vain0x avatar" />
 )
 
 export default (contents: JSX.Element) => (
@@ -14,7 +14,6 @@ export default (contents: JSX.Element) => (
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title>vain0x's Page</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700&amp;subset=japanese" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" media="screen" href="/index.css" />
       <link rel="icon" type="image/png" href="/favicon.jpg" />
     </head>
@@ -28,9 +27,6 @@ export default (contents: JSX.Element) => (
           </a>
           <a href="https://vain0x.github.io/blog/">
             ブログ
-          </a>
-          <a href="https://note.mu/vain0x/m/m9aa8513f4e97">
-            競プロ参戦記
           </a>
           <a href="https://github.com/vain0x">
             GitHub

@@ -9,8 +9,6 @@ interface Project {
   description: string | JSX.Element,
 }
 
-const MAIL_ADDRESS = "vainzerox@gmail.com"
-
 const githubIconWithSize = (size: number) => (
   <img
     class="g-github-icon"
@@ -20,7 +18,16 @@ const githubIconWithSize = (size: number) => (
 
 const githubIcon = githubIconWithSize(24)
 
-const githubIconTiny = githubIconWithSize(16)
+const selfIcon = (
+  <img
+    class="g-self-icon"
+    src="/favicon.jpg"
+    width={24} height={24} alt="vain0x avatar" />
+)
+
+const noteIcon = (
+  <div class="g-note-icon">n</div>
+)
 
 const qiitaIcon = (
   <div class="g-qiita-icon">Q</div>
@@ -28,12 +35,6 @@ const qiitaIcon = (
 
 const atcoderIcon = (
   <div class="g-atcoder-icon">A</div>
-)
-
-const hyperapp = (
-  <a href="https://github.com/jorgebucaran/hyperapp">
-    hyperapp {githubIconTiny}
-  </a>
 )
 
 const projects: Project[] = [
@@ -59,7 +60,7 @@ const projects: Project[] = [
   {
     icon: githubIcon,
     title: "HSP3 DEBUG GINGER",
-    url: "https://github.com/hsp3-debug-gigner",
+    url: "https://github.com/vain0x/hsp3-debug-ginger",
     summary: "VSCode 対応の HSP3 デバッガー",
     description: `
       HSP3 デバッガーの第二弾です。
@@ -71,24 +72,30 @@ const projects: Project[] = [
     title: "vain0x's Page",
     url: "https://github.com/vain0x/website",
     summary: "ポートフォリオ",
-    description: (<span>
-      このウェブサイトのソースコードです。
-      SPA フレームワーク {hyperapp} の SSR で静的に HTML を生成する試みをしています。
-    </span>),
+    description: `
+      このウェブサイトのソースコードです。手作りの CSS と、JavaScript (JSX) で静的に生成した HTML という構成。
+    `,
   },
 ]
 
 const articles: Project[] = [
   {
+    icon: noteIcon,
     title: "競プロ参戦記",
     url: "https://note.mu/vain0x/m/m9aa8513f4e97",
-    description: "競技プログラミングの問題を解いたあと、その考察を自分なりに書いていくブログです。",
+    description: "競技プログラミングの問題を解いたあと、その考察を自分なりに書いていく連載です。",
   },
   {
     icon: qiitaIcon,
     title: "LSP学習記",
     url: "https://qiita.com/vain0x/items/d050fe7c8b342ed2004e",
-    description: "プログラミング言語の入力支援などを行う機能を開発していく記事です。",
+    description: "プログラミング言語の入力支援などを行う機能を開発していく連載です。",
+  },
+  {
+    icon: selfIcon,
+    title: "vain0x's blog",
+    url: "/blog",
+    description: "技術ブログです。1ヶ月ごとに活動の概要をまとめた近況記事などを書いています。",
   },
 ]
 
@@ -152,7 +159,7 @@ export default layout(
             最高レート:
             <span class="g-atcoder-rate-blue">1775</span>
             (<datetime>2019/1/28</datetime> 現在)
-        </div>
+          </div>
         ),
       })}
     </section>
@@ -163,7 +170,7 @@ export default layout(
 
     <section class="contacts">
       <div>メール</div>
-      <div><code>{MAIL_ADDRESS}</code></div>
+      <div><code>vainzerox@gmail.com</code></div>
 
       <div>Twitter</div>
       <div><a href="https://twitter.com/vain0x">@vain0x</a></div>
