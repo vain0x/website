@@ -59,7 +59,7 @@ const projects: Project[] = [
   {
     icon: githubIcon,
     title: "HSP3 DEBUG GINGER",
-    url: "https://github.com/hsp3-debug-gigner",
+    url: "https://github.com/vain0x/hsp3-debug-ginger",
     summary: "VSCode 対応の HSP3 デバッガー",
     description: `
       HSP3 デバッガーの第二弾です。
