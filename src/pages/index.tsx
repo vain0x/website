@@ -20,20 +20,12 @@ const githubIconWithSize = (size: number) => (
 
 const githubIcon = githubIconWithSize(24)
 
-const githubIconTiny = githubIconWithSize(16)
-
 const qiitaIcon = (
   <div class="g-qiita-icon">Q</div>
 )
 
 const atcoderIcon = (
   <div class="g-atcoder-icon">A</div>
-)
-
-const hyperapp = (
-  <a href="https://github.com/jorgebucaran/hyperapp">
-    hyperapp {githubIconTiny}
-  </a>
 )
 
 const projects: Project[] = [
@@ -71,10 +63,9 @@ const projects: Project[] = [
     title: "vain0x's Page",
     url: "https://github.com/vain0x/website",
     summary: "ポートフォリオ",
-    description: (<span>
-      このウェブサイトのソースコードです。
-      SPA フレームワーク {hyperapp} の SSR で静的に HTML を生成する試みをしています。
-    </span>),
+    description: `
+      このウェブサイトのソースコードです。手作りの CSS と、JavaScript (JSX) で静的に生成した HTML という構成。
+    `,
   },
 ]
 
