@@ -20,6 +20,10 @@ const githubIconWithSize = (size: number) => (
 
 const githubIcon = githubIconWithSize(24)
 
+const noteIcon = (
+  <div class="g-note-icon">n</div>
+)
+
 const qiitaIcon = (
   <div class="g-qiita-icon">Q</div>
 )
@@ -71,6 +75,7 @@ const projects: Project[] = [
 
 const articles: Project[] = [
   {
+    icon: noteIcon,
     title: "競プロ参戦記",
     url: "https://note.mu/vain0x/m/m9aa8513f4e97",
     description: "競技プログラミングの問題を解いたあと、その考察を自分なりに書いていくブログです。",

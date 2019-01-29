@@ -10,6 +10,7 @@
   --base-color: #fafafa;
   --base-color-text: #212121;
   --divider-color: #bdbdbd;
+  --note-color: #41c9b4;
   --qiita-color: #54c400;
 
   --app-width: 600px;
@@ -234,27 +235,30 @@ body {
 
 /* Others */
 
-.g-qiita-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.2rem;
-  height: 3.2rem;
-  background: var(--qiita-color);
-  border-radius: 2.4rem;
-  font-size: 1.8rem;
-  color: var(--base-color);
-}
-
+.g-note-icon,
+.g-qiita-icon,
 .g-atcoder-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 3.2rem;
   height: 3.2rem;
-  background: var(--base-color-text);
   border-radius: 2.4rem;
   font-size: 1.8rem;
+}
+
+.g-note-icon {
+  background: var(--base-color);
+  color: var(--note-color);
+}
+
+.g-qiita-icon {
+  background: var(--qiita-color);
+  color: var(--base-color);
+}
+
+.g-atcoder-icon {
+  background: var(--base-color-text);
   color: var(--base-color);
 }
 
