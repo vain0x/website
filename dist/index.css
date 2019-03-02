@@ -10,7 +10,6 @@
   --base-color: #fafafa;
   --base-color-text: #212121;
   --divider-color: #bdbdbd;
-  --note-color: #41c9b4;
   --qiita-color: #54c400;
 
   --app-width: 600px;
@@ -233,7 +232,6 @@ body {
 /* Others */
 
 .g-self-icon,
-.g-note-icon,
 .g-qiita-icon,
 .g-atcoder-icon {
   display: inline-flex;
@@ -248,11 +246,6 @@ body {
 .g-self-icon {
   object-fit: cover;
   border-radius: 100%;
-}
-
-.g-note-icon {
-  background: var(--base-color);
-  color: var(--note-color);
 }
 
 .g-qiita-icon {
