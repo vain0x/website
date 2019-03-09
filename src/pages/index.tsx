@@ -122,7 +122,7 @@ const renderProject = (project: Project) => (
 export default layout((
   <article class="page-index">
     <div>
-      <strong>vain0x</strong> はプログラミング言語処理系を作る人です。
+      <strong>ベイン</strong> (@vain0x) はプログラミング言語処理系を作る人です。
     </div>
 
     <h2 class="g-article-section">
