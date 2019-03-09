@@ -119,10 +119,10 @@ const renderProject = (project: Project) => (
   </section>
 )
 
-export default layout(
+export default layout((
   <article class="page-index">
     <div>
-      <strong>vain0x</strong> はプログラミング言語処理系を作る人です。
+      <strong>ベイン</strong> (@vain0x) はプログラミング言語処理系を作る人です。
     </div>
 
     <h2 class="g-article-section">
@@ -161,6 +161,32 @@ export default layout(
     </section>
 
     <h2 class="g-article-section">
+      OSS 活動
+    </h2>
+
+    <section class="oss-activity">
+      <h3 class="oss-activity-heading">
+        OpenHSP
+      </h3>
+
+      <div class="oss-activity-description">
+        OpenHSP とは、スクリプト言語 HSP3 の処理系を開発する公式のプロジェクト。過去3回、機能の追加や修正のパッチを送って取り込んでいただきました。
+      </div>
+
+      <ul class="oss-activity-history g-flat-list">
+        <li>
+          2010年 <a href="http://dev.onionsoft.net/trac/openhsp/changeset/423">チェンジセット423</a>
+        </li>
+        <li>
+          2015年 <a href="http://dev.onionsoft.net/trac/openhsp/changeset/754">チェンジセット754</a>
+        </li>
+        <li>
+          2016年 <a href="http://dev.onionsoft.net/trac/openhsp/changeset/795">チェンジセット795</a>
+        </li>
+      </ul>
+    </section>
+
+    <h2 class="g-article-section">
       コンタクト
     </h2>
 
@@ -171,5 +197,5 @@ export default layout(
       <div>Twitter</div>
       <div><a href="https://twitter.com/vain0x">@vain0x</a></div>
     </section>
-  </article>,
-)
+  </article>
+))

@@ -10,6 +10,8 @@
   --base-color: #fafafa;
   --base-color-text: #212121;
   --divider-color: #bdbdbd;
+  --app-main-container-background: #ffffffaa;
+  --quote-color-dark: #eeeeee66;
   --qiita-color: #54c400;
 
   --app-width: 600px;
@@ -74,6 +76,15 @@ h6 {
   font-size: 2.0rem;
 }
 
+.g-flat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 /* Base layout. */
 
 html,
@@ -127,7 +138,7 @@ body {
 }
 
 #app .app-main-container {
-  background: #ffffffaa;
+  background: var(--app-main-container-background);
 }
 
 /* Header styles. */
@@ -183,6 +194,10 @@ body {
   font-size: 1.6rem;
 }
 
+.page-index h3 {
+  font-size: 2.0rem;
+}
+
 .page-index .projects,
 .page-index .contacts {
   display: flex;
@@ -221,6 +236,22 @@ body {
 
 .page-index .project-description {
   font-size: 1.4rem;
+}
+
+.page-index .oss-activity {
+  margin: 16px;
+}
+
+.page-index .oss-activity-description,
+.page-index .oss-activity-history {
+  margin-top: 8px;
+}
+
+.page-index .oss-activity-history {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--divider-color);
+  background: var(--quote-color-dark);
 }
 
 .page-index .contacts {
