@@ -49,6 +49,13 @@
   flex-flow: column nowrap;
 }
 
+/* Header styles. */
+
+#app .app-header-logo {
+  width: auto;
+  height: 2.4rem;
+}
+
 /* Index page. */
 
 .page-index,

@@ -20,18 +20,33 @@ export default (contents: JSX.Element) => (
     </head>
     <body id="app">
       <header class="app-header-container g-nav">
+        <input type="checkbox" id="app-header-nav-button-checkbox" />
+
         <div class="app-header-contents">
-          <a href="/" class="app-header-link">
-            <h1 class="app-header-heading">
-              {favicon}'s Page
-            </h1>
-          </a>
-          <a class="app-header-link" href="https://vain0x.github.io/blog/">
-            ブログ
-          </a>
-          <a class="app-header-link" href="https://github.com/vain0x">
-            GitHub
-          </a>
+          <div class="app-header-header">
+            <a href="/" class="app-header-link">
+              <h1 class="app-header-heading">
+                {favicon}'s Page
+              </h1>
+            </a>
+          </div>
+
+          <div class="app-header-main">
+            <a class="app-header-link" href="https://vain0x.github.io/blog/">
+              ブログ
+            </a>
+            <a class="app-header-link" href="https://github.com/vain0x">
+              GitHub
+            </a>
+          </div>
+
+          <div class="app-header-footer">
+            <label for="app-header-nav-button-checkbox" class="app-header-nav-button-container">
+              <span class="app-header-nav-button-heading">
+                ≡
+              </span>
+            </label>
+          </div>
         </div>
       </header>
 

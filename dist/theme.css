@@ -104,32 +104,99 @@ body {
   background: var(--app-main-container-background);
 }
 
-/* Header styles. */
+/*
+  -----------------------------------------------
+  Header styles
+  -----------------------------------------------
+
+  ヘッダー領域の内部も、左から右に header/main/footer の領域に分割する。
+
+  header 部分には logo を、main にはリンクのリストを、footer にはハンバーガーメニューのアイコンを置く。
+
+  スマートフォン版ではハンバーガーメニューを用いる。ハンバーガーは不可視チェックボックスのラベルになっていて、チェックが入っているときだけメニューが表示される。
+
+  ヘッダー領域の要素は下方向 (flex-end) に整列させる。
+*/
 
 #app .app-header-contents,
-#app .app-header-contents .app-header-heading {
+#app .app-header-header,
+#app .app-header-heading,
+#app .app-header-footer {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: flex-end;
 }
 
-#app .app-header-contents .app-header-logo {
-  width: auto;
-  height: 2.4rem;
-}
-
-#app .app-header-contents .app-header-heading {
-  margin: 0;
-  padding: 0;
+#app .app-header-heading {
   font-size: 1.8rem;
 }
 
-#app .app-header-contents .app-header-link {
+#app .app-header-link {
   margin-right: 16px;
   color: var(--primary-color-text);
 }
 
-#app .app-header-contents .app-header-link:hover,
-#app .app-header-contents .app-header-link:focus {
+#app .app-header-link:hover,
+#app .app-header-link:focus {
   color: var(--primary-color-light);
+}
+
+#app .app-header-nav-button-heading {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--base-color);
+
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: var(--primary-color-dark);
+}
+
+#app #app-header-nav-button-checkbox {
+  display: none;
+}
+
+@media (min-width: 371px) {
+  #app .app-header-main {
+    flex: 1 0 auto;
+  }
+
+  #app .app-header-nav-button-container {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 371px) {
+  #app .app-header-contents {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+  }
+
+  .app-header-header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .app-header-main {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+
+  .app-header-footer {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  #app .app-header-main {
+    visibility: hidden;
+    position: absolute;
+
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #app-header-nav-button-checkbox:checked ~ .app-header-contents .app-header-main {
+    visibility: visible;
+    position: relative;
+  }
 }
