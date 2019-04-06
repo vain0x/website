@@ -155,7 +155,7 @@ body {
   display: none;
 }
 
-@media (min-width: 371px) {
+@media (min-width: 481px) {
   #app .app-header-main {
     flex: 1 0 auto;
   }
@@ -165,7 +165,7 @@ body {
   }
 }
 
-@media (max-width: 371px) {
+@media (max-width: 481px) {
   #app .app-header-contents {
     display: grid;
     grid-template-columns: 1fr auto;
