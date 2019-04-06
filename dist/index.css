@@ -1,55 +1,19 @@
 :root {
-  --primary-color-light: #6746c3;
-  --primary-color-dark: #000063;
-  --primary-color: #311b92;
-  --primary-color-text: #fafafa;
-  --accent-color: #ffa000;
-  --accent-color-text: #212121;
-  --accent-color-light: #ffd149;
-  --accent-color-dark: #c67100;
-  --base-color: #fafafa;
-  --base-color-text: #212121;
-  --divider-color: #bdbdbd;
-  --app-main-container-background: #ffffffaa;
   --quote-color-dark: #eeeeee66;
   --qiita-color: #54c400;
-
   --app-width: 600px;
 }
 
-/* Typography. */
+@media (min-width: 649px) {
+  #app .app-header-container,
+  #app .app-main-container {
+    align-items: center;
+  }
 
-html {
-  /* 1rem = 10px. */
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Yu Gothic Medium", "Hiragino Kaku Gothic Pro", sans-serif;
-}
-
-body,
-button,
-input,
-optgroup,
-select,
-textarea {
-  line-height: 1.5;
-}
-
-/* Default style override. */
-
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
+  #app .app-header-contents,
+  #app .app-main-container > article {
+    width: var(--app-width);
+  }
 }
 
 /* Document components. */
@@ -85,99 +49,11 @@ h6 {
   flex-flow: column nowrap;
 }
 
-/* Base layout. */
-
-html,
-body {
-  min-height: 100vh;
-}
-
-html,
-body,
-#app,
-#app .app-header-container,
-#app .app-main-container,
-#app .app-main-container > article {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-#app .app-main-container {
-  flex: 1 1 auto;
-}
-
-#app .app-header-contents,
-#app .app-main-container > article {
-  flex: 1 1 auto;
-  padding: 4px 16px;
-}
-
-#app .app-main-container > article {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-}
-
-@media (min-width: 649px) {
-  #app .app-header-container,
-  #app .app-main-container {
-    align-items: center;
-  }
-
-  #app .app-header-contents,
-  #app .app-main-container > article {
-    width: var(--app-width);
-  }
-}
-
-/* Background. */
-
-body {
-  color: var(--base-color-text);
-  background: linear-gradient(0.33turn, var(--primary-color-dark), var(--accent-color-dark));
-}
-
-#app .app-main-container {
-  background: var(--app-main-container-background);
-}
-
 /* Header styles. */
 
-#app .app-header-contents,
-#app .app-header-contents h1 {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-end;
-}
-
-#app .app-header-contents .app-header-logo {
+#app .app-header-logo {
   width: auto;
   height: 2.4rem;
-}
-
-#app .app-header-contents h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.8rem;
-}
-
-#app .app-header-contents a {
-  margin-right: 16px;
-  color: var(--primary-color-text);
-}
-
-#app .app-header-contents a:hover,
-#app .app-header-contents a:focus {
-  color: var(--primary-color-light);
-}
-
-/* Footer. */
-
-#app footer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  color: var(--base-color-text);
 }
 
 /* Index page. */
