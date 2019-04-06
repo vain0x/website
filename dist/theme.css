@@ -93,6 +93,13 @@ body,
   margin-bottom: 16px;
 }
 
+@media (min-width: 481px) {
+  #app .app-header-container,
+  #app .app-main-container {
+    align-items: center;
+  }
+}
+
 /* Background. */
 
 body {
