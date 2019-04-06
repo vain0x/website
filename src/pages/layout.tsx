@@ -14,6 +14,7 @@ export default (contents: JSX.Element) => (
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title>vain0x's Page</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" type="text/css" media="screen" href="/theme.css" />
       <link rel="stylesheet" type="text/css" media="screen" href="/index.css" />
       <link rel="icon" type="image/png" href="/favicon.jpg" />
     </head>
