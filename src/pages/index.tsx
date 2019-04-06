@@ -120,7 +120,7 @@ const renderProject = (project: Project) => (
 )
 
 export default layout((
-  <article class="page-index">
+  <article class="app-main-contents page-index">
     <div>
       <strong>ベイン</strong> (@vain0x) はプログラミング言語処理系を作る人です。
     </div>

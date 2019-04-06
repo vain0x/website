@@ -21,15 +21,15 @@ export default (contents: JSX.Element) => (
     <body id="app">
       <header class="app-header-container g-nav">
         <div class="app-header-contents">
-          <a href="/">
-            <h1>
+          <a href="/" class="app-header-link">
+            <h1 class="app-header-heading">
               {favicon}'s Page
             </h1>
           </a>
-          <a href="https://vain0x.github.io/blog/">
+          <a class="app-header-link" href="https://vain0x.github.io/blog/">
             ブログ
           </a>
-          <a href="https://github.com/vain0x">
+          <a class="app-header-link" href="https://github.com/vain0x">
             GitHub
           </a>
         </div>
