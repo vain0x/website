@@ -35,6 +35,9 @@ export default (contents: JSX.Element) => (
             <a class="app-header-link" href="https://vain0x.github.io/blog/">
               ブログ
             </a>
+            <a class="app-header-link" href="https://qiita.com/tags/%E7%AB%B6%E3%83%97%E3%83%AD%E5%8F%82%E6%88%A6%E8%A8%98">
+              競プロ参戦記
+            </a>
             <a class="app-header-link" href="https://github.com/vain0x">
               GitHub
             </a>
