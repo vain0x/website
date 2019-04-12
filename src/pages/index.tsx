@@ -171,19 +171,20 @@ export default layout((
 
       <div class="oss-activity-description">
         OpenHSP とは、スクリプト言語 HSP3 の処理系を開発する公式のプロジェクト。過去3回、機能の追加や修正のパッチを送って取り込んでいただきました。
+        (
+          <ul className="g-inline-list">
+            <li>
+              <a href="http://dev.onionsoft.net/trac/openhsp/changeset/423">r423 (2010)</a>,
+            </li>
+            <li>
+              <a href="http://dev.onionsoft.net/trac/openhsp/changeset/754">r754 (2015)</a>,
+            </li>
+            <li>
+              <a href="http://dev.onionsoft.net/trac/openhsp/changeset/795">r795 (2016)</a>
+            </li>
+          </ul>
+        )
       </div>
-
-      <ul class="oss-activity-history g-flat-list">
-        <li>
-          2010年 <a href="http://dev.onionsoft.net/trac/openhsp/changeset/423">チェンジセット423</a>
-        </li>
-        <li>
-          2015年 <a href="http://dev.onionsoft.net/trac/openhsp/changeset/754">チェンジセット754</a>
-        </li>
-        <li>
-          2016年 <a href="http://dev.onionsoft.net/trac/openhsp/changeset/795">チェンジセット795</a>
-        </li>
-      </ul>
     </section>
 
     <h2 class="g-article-section">

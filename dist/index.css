@@ -44,6 +44,19 @@
   flex-flow: column nowrap;
 }
 
+.g-inline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: inline-flex;
+  flex-flow: row nowrap;
+}
+
+.g-inline-list > li {
+  margin: 2px;
+}
+
 /* Header styles. */
 
 #app .app-header-logo {
@@ -113,16 +126,8 @@
   margin: 16px;
 }
 
-.page-index .oss-activity-description,
-.page-index .oss-activity-history {
+.page-index .oss-activity-description {
   margin-top: 8px;
-}
-
-.page-index .oss-activity-history {
-  padding: 16px;
-  border-radius: 8px;
-  border: 1px solid var(--divider-color);
-  background: var(--quote-color-dark);
 }
 
 .page-index .contacts {
