@@ -16,7 +16,7 @@
     "deploy:checkout-release": "git checkout release",
     "deploy:merge": "git merge master --no-edit",
     "deploy:build": "npm run prod:build",
-    "deploy:commit": "git add ./dist && git commit -m Build",
+    "deploy:commit": "git add ./dist && git commit --allow-empty -m Build",
     "deploy:push": "git subtree push --prefix dist gh-pages master",
     "deploy:checkout-master": "git checkout master",
     "deploy:clean": "npm run clean",
