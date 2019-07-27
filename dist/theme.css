@@ -105,6 +105,9 @@ body,
 body {
   color: var(--base-color-text);
   background: linear-gradient(0.33turn, var(--primary-color-dark), var(--accent-color-dark));
+
+  /* スクロールしても変化しないようにする。 */
+  background-attachment: fixed;
 }
 
 #app .app-main-container {
