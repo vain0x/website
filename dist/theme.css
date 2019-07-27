@@ -1,5 +1,5 @@
 :root {
-  --primary-color-light: #6746c3;
+  --primary-color-light: #2e2eb6;
   --primary-color-dark: #000063;
   --primary-color: #311b92;
   --primary-color-text: #fafafa;
@@ -10,7 +10,7 @@
   --base-color: #fafafa;
   --base-color-text: #212121;
   --divider-color: #bdbdbd;
-  --app-main-container-background: #ffffffaa;
+  --app-main-container-background: #ffffffd4;
 }
 
 /* Typography. */
@@ -105,6 +105,9 @@ body,
 body {
   color: var(--base-color-text);
   background: linear-gradient(0.33turn, var(--primary-color-dark), var(--accent-color-dark));
+
+  /* スクロールしても変化しないようにする。 */
+  background-attachment: fixed;
 }
 
 #app .app-main-container {
