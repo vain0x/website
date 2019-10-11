@@ -36,21 +36,24 @@ const atcoderIcon = (
 const projects: Project[] = [
   {
     icon: githubIcon,
+    title: "ミローネ言語",
+    url: "https://github.com/vain0x/milone-lang",
+    summary: "F# サブセット言語のコンパイラ",
+    description: (
+      <div>
+        コンパイラでコンパイラ自身をコンパイルする「セルフホスティング」を達成しました。
+        (<a href="https://qiita.com/vain0x/items/00c554517961e53f945a">記事</a>)
+      </div>
+    ),
+  },
+  {
+    icon: githubIcon,
     title: "knowbug",
     url: "https://github.com/vain0x/knowbug",
     summary: "HSP3 の自作デバッガー",
     description: `
       スクリプト言語 HSP3 のデバッガーです。
       コミュニティで一定の評価を得ました。
-    `,
-  },
-  {
-    icon: githubIcon,
-    title: "ミローネ言語",
-    url: "https://github.com/vain0x/milone-lang",
-    summary: "F# サブセットコンパイラ",
-    description: `
-      コンパイラでコンパイラ自身をコンパイルする「セルフホスティング」を目指しています。
     `,
   },
   {
@@ -153,8 +156,8 @@ export default layout((
         description: (
           <div>
             最高レート:
-            <span class="g-atcoder-rate-blue">1775</span>
-            (<datetime>2019/1/28</datetime> 現在)
+            <span class="g-atcoder-rate-blue">1850</span>
+            (<datetime>2019/6/9</datetime> 現在)
           </div>
         ),
       })}
@@ -197,6 +200,9 @@ export default layout((
 
       <div>Twitter</div>
       <div><a href="https://twitter.com/vain0x">@vain0x</a></div>
+
+      <div>マシュマロ</div>
+      <div><a href="https://marshmallow-qa.com/vain0x?utm_medium=url_text&amp;utm_source=promotion">@vain0x</a></div>
     </section>
   </article>
 ))
