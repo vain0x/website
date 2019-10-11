@@ -153,8 +153,8 @@ export default layout((
         description: (
           <div>
             最高レート:
-            <span class="g-atcoder-rate-blue">1775</span>
-            (<datetime>2019/1/28</datetime> 現在)
+            <span class="g-atcoder-rate-blue">1850</span>
+            (<datetime>2019/6/9</datetime> 現在)
           </div>
         ),
       })}
