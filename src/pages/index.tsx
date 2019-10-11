@@ -48,10 +48,13 @@ const projects: Project[] = [
     icon: githubIcon,
     title: "ミローネ言語",
     url: "https://github.com/vain0x/milone-lang",
-    summary: "F# サブセットコンパイラ",
-    description: `
-      コンパイラでコンパイラ自身をコンパイルする「セルフホスティング」を目指しています。
-    `,
+    summary: "F# サブセット言語のコンパイラ",
+    description: (
+      <div>
+        コンパイラでコンパイラ自身をコンパイルする「セルフホスティング」を達成しました。
+        (<a href="https://qiita.com/vain0x/items/00c554517961e53f945a">記事</a>)
+      </div>
+    ),
   },
   {
     icon: githubIcon,
