@@ -36,16 +36,6 @@ const atcoderIcon = (
 const projects: Project[] = [
   {
     icon: githubIcon,
-    title: "knowbug",
-    url: "https://github.com/vain0x/knowbug",
-    summary: "HSP3 の自作デバッガー",
-    description: `
-      スクリプト言語 HSP3 のデバッガーです。
-      コミュニティで一定の評価を得ました。
-    `,
-  },
-  {
-    icon: githubIcon,
     title: "ミローネ言語",
     url: "https://github.com/vain0x/milone-lang",
     summary: "F# サブセット言語のコンパイラ",
@@ -55,6 +45,16 @@ const projects: Project[] = [
         (<a href="https://qiita.com/vain0x/items/00c554517961e53f945a">記事</a>)
       </div>
     ),
+  },
+  {
+    icon: githubIcon,
+    title: "knowbug",
+    url: "https://github.com/vain0x/knowbug",
+    summary: "HSP3 の自作デバッガー",
+    description: `
+      スクリプト言語 HSP3 のデバッガーです。
+      コミュニティで一定の評価を得ました。
+    `,
   },
   {
     icon: githubIcon,
