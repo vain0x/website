@@ -13,21 +13,6 @@
 
 /* Document components. */
 
-.g-nav a,
-.g-nav a:active,
-.g-nav a:focus,
-.g-nav a:hover,
-.g-nav a:visited {
-  text-decoration: none;
-  color: var(--base-color-text);
-  transition: color 0.1s linear;
-}
-
-.g-nav a:hover,
-.g-nav a:focus {
-  color: var(--primary-color-light);
-}
-
 .g-article-section {
   padding: 8px 16px;
   background: var(--primary-color);

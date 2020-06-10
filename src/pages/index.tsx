@@ -58,12 +58,11 @@ const projects: Project[] = [
   },
   {
     icon: githubIcon,
-    title: "HSP3 DEBUG GINGER",
-    url: "https://github.com/vain0x/hsp3-debug-ginger",
-    summary: "VSCode 対応の HSP3 デバッガー",
+    title: "HSP3 GINGER",
+    url: "https://github.com/vain0x/hsp3-ginger",
+    summary: "HSP3 開発ツール群",
     description: `
-      HSP3 デバッガーの第二弾です。
-      デバッガーの汎用プロトコル DAP をサポートしています。
+      HSP3 の入力支援ツール (LSP サーバ) やビルドツール、VSCode 上で HSP3 の開発を行うための拡張機能などを作っています。
     `,
   },
   {
@@ -100,7 +99,7 @@ const articles: Project[] = [
 
 const renderProject = (project: Project) => (
   <section class="project">
-    <h3 class="project-heading g-nav">
+    <h3 class="project-heading">
       <a href={project.url}>
         {project.icon && (
           <span class="project-heading-icon">
