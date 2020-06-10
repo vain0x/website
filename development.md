@@ -17,8 +17,8 @@ git remote add gh-pages git@github.com:vain0x/vain0x.github.io.git
 git branch release origin/release
 
 # Check.
-npm build
-npm clean
+npm run prod
+npm run clean
 ```
 
 ## Deploy
