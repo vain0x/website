@@ -100,7 +100,7 @@ const articles: Project[] = [
 
 const renderProject = (project: Project) => (
   <section class="project">
-    <h3 class="project-heading g-nav">
+    <h3 class="project-heading">
       <a href={project.url}>
         {project.icon && (
           <span class="project-heading-icon">

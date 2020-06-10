@@ -19,7 +19,7 @@ export default (contents: JSX.Element) => (
       <link rel="icon" type="image/png" href="/favicon.jpg" />
     </head>
     <body id="app">
-      <header class="app-header-container g-nav">
+      <header class="app-header-container">
         <input type="checkbox" id="app-header-nav-button-checkbox" />
 
         <div class="app-header-contents">

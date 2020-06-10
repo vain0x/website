@@ -10,7 +10,6 @@
   --base-color: #fafafa;
   --base-color-text: #212121;
   --divider-color: #bdbdbd;
-  --app-main-container-background: #ffffffd4;
 }
 
 /* Typography. */
@@ -51,6 +50,10 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+h3 > a {
+  text-decoration: none;
 }
 
 /*
@@ -104,14 +107,7 @@ body,
 
 body {
   color: var(--base-color-text);
-  background: linear-gradient(0.33turn, var(--primary-color-dark), var(--accent-color-dark));
-
-  /* スクロールしても変化しないようにする。 */
-  background-attachment: fixed;
-}
-
-#app .app-main-container {
-  background: var(--app-main-container-background);
+  background: var(--base-color);
 }
 
 /*
@@ -137,6 +133,10 @@ body {
   align-items: flex-end;
 }
 
+#app .app-header-container {
+  background: var(--primary-color-dark);
+}
+
 #app .app-header-heading {
   font-size: 1.8rem;
 }
@@ -157,7 +157,7 @@ body {
 
 #app .app-header-link:hover,
 #app .app-header-link:focus {
-  color: var(--primary-color-light);
+  color: var(--accent-color-light);
 }
 
 #app .app-header-nav-button-heading {
